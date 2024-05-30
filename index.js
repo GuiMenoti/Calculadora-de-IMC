@@ -27,8 +27,8 @@ function calculaIMC(peso, altura) {
 
 function ativarBotao() {
 
-    let pesoFlavio = document.getElementById("peso").value;
-    let alturaFlavio = document.getElementById("altura").value;
+    let pesoFlavio = parseFloat(document.getElementById("peso").value.replace(",", "."));
+    let alturaFlavio = parseFloat(document.getElementById("altura").value.replace(",", "."));
     let nomeIndividuo = document.getElementById("nome").value;
     let nomeResultado = document.getElementById("nome-resultado");
 
