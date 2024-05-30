@@ -23,6 +23,8 @@ function calculaIMC(peso, altura) {
 
 }
 
+
+
 function ativarBotao() {
 
     let pesoFlavio = document.getElementById("peso").value;
@@ -39,7 +41,15 @@ function ativarBotao() {
     document.querySelector('.section-resultado').style.display = 'flex';
     nomeResultado.textContent = nomeIndividuo;
     calculaIMC(pesoFlavio, alturaFlavio);
+
+    if (window.innerWidth <= 600) {
+        // Obtém a posição da segunda seção
+        const resultadoSection = document.getElementById('resultado');
+        // Rola a página até a posição da segunda seção
+        resultadoSection.scrollIntoView({ behavior: 'smooth' });
+    }
 }
+
 
 
 function voltar() {

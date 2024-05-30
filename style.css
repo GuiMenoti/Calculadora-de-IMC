@@ -110,6 +110,7 @@ input {
      {
         width: calc(80vw - 10px); /* Ajusta a largura para ocupar quase toda a largura da tela */
         margin: 10px auto; /* Centraliza os elementos */
+        height: auto; 
     }
 
     .input {
